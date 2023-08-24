@@ -1,0 +1,75 @@
+\documentclass[a4paper,12pt]{article}
+
+\usepackage{url}
+\usepackage{parskip}
+
+\RequirePackage{color}
+\RequirePackage{graphicx}
+
+\usepackage[usenames,dvipsnames]{xcolor}
+\usepackage[scale=0.9]{geometry}
+\usepackage{tabularx}
+\usepackage{enumitem}
+
+\newcolumntype{C}{>{\centering\arraybackslash}X} 
+
+\usepackage{supertabular}
+\usepackage{tabularx}
+
+\newlength{\fullcollw}
+\setlength{\fullcollw}{0.47\textwidth}
+
+\usepackage{titlesec}				
+\usepackage{multicol}
+\usepackage{multirow}
+
+\titleformat{\section}{\Large\scshape\raggedright}{}{0em}{}[\titlerule]
+\titlespacing{\section}{0pt}{10pt}{10pt}
+
+\usepackage[unicode, draft=false]{hyperref}
+
+\definecolor{linkcolour}{rgb}{0,0.2,0.6}
+\hypersetup{colorlinks,breaklinks,urlcolor=linkcolour,linkcolor=linkcolour}
+
+\usepackage{fontawesome5}
+
+\begin{document}
+
+\pagestyle{empty} 
+
+\begin{tabularx}{\linewidth}{@{} C @{}}
+\Huge{Nome aqui} \\[7.5pt]
+\href{https://github.com/username}{\raisebox{-0.05\height}\faGithub\ nome usuário} \ $|$ \   
+\href{mailto:email@provedor.com}{\raisebox{-0.05\height}\faEnvelope \ email@provedor.com} \ $|$ \ 
+\href{tel:número celular}{\raisebox{-0.05\height}\faMobile \ número celular} \\
+\end{tabularx}
+
+\section{EXPERIÊNCIA PROFISSIONAL}
+
+Descrever experiências profissionais aqui!!!
+
+\section{PROJETOS}
+
+Listar projetos acadêmicos/empresarias ou atividades voluntárias.
+
+\section{EDUCAÇÃO}
+
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+
+Ano Início - Ano Fim & Doutorado em 'curso aqui' pela \textbf{Universidade ...} \\
+
+Ano Início - Ano Fim & Mestrado em 'curso aqui' pela \textbf{Universidade ...} \\
+
+Ano Início - Ano Fim & Graduação em 'curso aqui' pela \textbf{Universidade ...} \\ 
+
+Ano & Ensino médio pelo \textbf{Colégio ...} \\
+\end{tabularx}
+
+\section{HABILIDADES}
+\begin{tabularx}{\linewidth}{@{}l X@{}}
+Excel &  \normalsize{Descrever a habilidade aqui.}\\
+Word  &  \normalsize{Descrever a habilidade aqui.}\\
+Inglês  &  \normalsize{Descrever a habilidade aqui.}\\
+\end{tabularx}
+
+\end{document}
